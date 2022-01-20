@@ -29,21 +29,21 @@ int check_letter(char c, int index)
 }
 
 
-//REcordar hacer free(sol_status)!!!!!!!!!!!!!!!!!!
-int *check_word(char *sol)
+//Recordar hacer free(sol_status)!!!!!!!!!!!!!!!!!!
+int *check_word(char *word)
 {
 	int i;
-	int *sol_status = (int *)malloc(5 * sizeof(int));
+	int *word_status = (int *)malloc(5 * sizeof(int));
 
-	for(i = 0; sol[i]; i++)
+	for(i = 0; word[i]; i++)
 	{
-		sol_status[i] = check_letter(sol[i], i);
+		word_status[i] = check_letter(word[i], i);
 	}
 
-	return (sol_status);
+	return (word_status);
 }
 
-int main()
+/* int main()
 {
 	int i;
 	char sol[5] = "MAREO";
@@ -53,4 +53,4 @@ int main()
 		printf("%d\n", sol_status[i]);
 
 	return 0;
-}
+} */
