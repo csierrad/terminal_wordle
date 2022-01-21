@@ -29,7 +29,7 @@ int check_letter(char c, int index)
 }
 
 
-//Recordar hacer free(sol_status)!!!!!!!!!!!!!!!!!!
+
 int *check_word(char *word)
 {
 	int i;
@@ -42,15 +42,3 @@ int *check_word(char *word)
 
 	return (word_status);
 }
-
-/* int main()
-{
-	int i;
-	char sol[5] = "MAREO";
-	int *sol_status = check_word(sol);
-	
-	for(i=0; i < 5; i++)
-		printf("%d\n", sol_status[i]);
-
-	return 0;
-} */

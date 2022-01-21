@@ -8,10 +8,11 @@ void clean_stdin(void)
     } while (c != '\n' && c != EOF);
 }
 
+
 int main()
 {
 	int i;
-	char word[5];		//poner 5 o 6!!!!!!!!!!!!!!!!!1
+	char word[5];		//poner 5 o 6!!!!!!!!!!!!!!!!!
 
 	print_grid();
 	printf("\n");
