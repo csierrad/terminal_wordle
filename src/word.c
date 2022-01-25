@@ -1,10 +1,7 @@
 #include "functions.h"
 
-char word[] = "METAL";
 
-
-
-int check_letter(char c, int index)
+int check_letter(char word[5], char c, int index)
 {	
 	int i;
 
@@ -30,14 +27,14 @@ int check_letter(char c, int index)
 
 
 
-int *check_word(char *word)
+int *check_word(char word[5], char word_try[5])
 {
 	int i;
 	int *word_status = (int *)malloc(5 * sizeof(int));
 
-	for(i = 0; word[i]; i++)
+	for(i = 0; word_try[i]; i++)
 	{
-		word_status[i] = check_letter(word[i], i);
+		word_status[i] = check_letter(word, word_try[i], i);
 	}
 
 	return (word_status);
