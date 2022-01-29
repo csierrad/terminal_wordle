@@ -8,8 +8,8 @@ void filter_5letter_words()
 	char str[5];
 	char c;
 	int fd = open("./spanish_dictionary.txt", O_RDONLY);
-	int fd1 = open("./build/filtered_dictionary.txt", O_APPEND | O_WRONLY, 00700);
-
+	int fd1 = open("./build/filtered_dictionary.txt", O_APPEND | O_WRONLY);
+	
 	while(eof)
 	{
 		eof = read(fd, &c, 1);	
@@ -30,7 +30,6 @@ void filter_5letter_words()
 		}
 		if(i == 5)
 		{
-			printf("str: %s\n", str);
 			write(fd1, str, 5);
 			write(fd1, "\n", 1);
 		}
@@ -65,16 +64,15 @@ int get_rows()
 
 char *get_main_word()
 {
-	int i = 0;
+	int i = 0, nrand, rows;
 	char *str = (char *)malloc(sizeof(char) + 5);
 	char c;
 	int fd = open("./build/filtered_dictionary.txt", O_RDONLY);
-	int rows = get_rows();
 	
 	srand(time(NULL));
 
-	int nrand = rand() % rows;
-	printf("rand: %d\n", nrand);
+	rows = get_rows();
+	nrand = rand() % rows;
 
 	while(i < nrand - 1)
 	{
@@ -93,8 +91,3 @@ char *get_main_word()
 
 	return (str);
 }
-
-/* 
-menor c=10 	i<=4
-igual c=10	i=5
-mayor c!=10 	i>5 */

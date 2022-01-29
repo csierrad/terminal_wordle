@@ -8,6 +8,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <time.h>
+#include <ctype.h>
 
 #define trc "\U00002513" //┓
 #define tlc "\U0000250F" //┏
@@ -28,7 +29,7 @@ void clean_stdin(void);
 void print_grid();
 void set_color(int status);
 void print_letter_color(char *str, int *word_status);
-void print_word(char main_word, char *str, int n);
+void print_word(char *main_word, char *str, int n);
 
 // word.c
 int check_letter(char word[5], char c, int index);
