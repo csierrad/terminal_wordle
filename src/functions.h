@@ -24,11 +24,12 @@
 
 // main.c
 void clean_stdin(void);
+int correct_word(char * main_word, char *word);
 
 // print.c
 void print_grid();
 void set_color(int status);
-void print_letter_color(char *str, int *word_status);
+void print_letter_with_color(char *str, int *word_status);
 void print_word(char *main_word, char *str, int n);
 
 // word.c

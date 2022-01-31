@@ -81,7 +81,7 @@ void set_color(int status)
 	return;
 }
 
-void print_letter_color(char *str, int *word_status)
+void print_letter_with_color(char *str, int *word_status)
 {
 	int i, j;
 	for (j = 0; j < 3; j++)
@@ -134,7 +134,7 @@ void print_word(char *main_word, char *str, int n)
 
 	printf("\033[2A");
 
-	print_letter_color(str, word_status);
+	print_letter_with_color(str, word_status);
 
 	printf("\0338"); // Reestablece posición del cursor
 
