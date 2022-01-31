@@ -20,27 +20,6 @@ char *to_upper(char *str)
 	return (str);
 }
 
-int correct_word(char * main_word, char *word)
-{
-	int i = 0;
-	int *word_status = check_word(main_word, word);
-
-	while(i < 6)
-	{
-		if(word_status[i] == 0)
-		{
-			break;
-		}
-		i++;
-	}
-	if(i == 5)
-	{
-		return (1);
-	}
-
-	return (0);
-}
-
 
 int main()
 {

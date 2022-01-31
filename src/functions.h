@@ -24,7 +24,6 @@
 
 // main.c
 void clean_stdin(void);
-int correct_word(char * main_word, char *word);
 
 // print.c
 void print_grid();
@@ -40,6 +39,9 @@ int *check_word(char *word, char *word_try);
 void filter_5letter_words();
 int get_rows();
 char *get_main_word();
+
+//checks.c
+int correct_word(char * main_word, char *word);
 
 
 #endif

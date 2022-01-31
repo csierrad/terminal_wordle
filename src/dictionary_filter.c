@@ -7,8 +7,8 @@ void filter_5letter_words()
 	int eof = 1, i, flag;
 	char str[5];
 	char c;
-	int fd = open("./spanish_dictionary.txt", O_RDONLY);
-	int fd1 = open("./build/filtered_dictionary.txt", O_APPEND | O_WRONLY);
+	int fd = open("./dictionaries/spanish_common_words.txt", O_RDONLY);
+	int fd1 = open("./build/filtered_dictionary.txt", O_WRONLY);
 	
 	while(eof)
 	{
