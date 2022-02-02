@@ -65,7 +65,7 @@ int get_rows()
 char *get_main_word()
 {
 	int i = 0, nrand, rows;
-	char *str = (char *)malloc(sizeof(char) + 5);
+	char *str = (char *)malloc(sizeof(char) + 6);
 	char c;
 	int fd = open("./build/filtered_dictionary.txt", O_RDONLY);
 	
@@ -86,6 +86,7 @@ char *get_main_word()
 	i = 0;
 	
 	read(fd, str, 5);
+	str[6] = 0;
 	
 	close(fd);
 

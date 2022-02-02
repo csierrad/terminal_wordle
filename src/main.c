@@ -21,9 +21,9 @@ int main()
 
 	filter_5letter_words();
 	main_word = to_upper(get_main_word());
-	printf("main_word: %s\n", main_word);
+	//printf("main_word: %s\n", main_word);
 
-	printf("\e[8;42;68t"); // Resize terminal 42*75 characters
+	printf("\e[8;43;68t"); // Resize terminal 42*75 characters (alto x ancho)
 	print_grid();
 	printf("\n");
 
@@ -47,6 +47,11 @@ int main()
 
 		printf("\033[1A");
 		printf("\033[K"); // Clear line from cursor right
+	}
+
+	if(!correct_word(main_word, word))
+	{
+		printf("La palabra correcta era: %s\n\n", to_upper(main_word));
 	}
 
 	return 0;
