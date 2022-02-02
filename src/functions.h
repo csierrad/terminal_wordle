@@ -23,16 +23,16 @@
 #define bot_line blc hl hl hl hl hl hl hl brc //┗━━━┛
 
 // main.c
-void clean_stdin(void);
+char *to_upper(char *str);
 
 // print.c
 void print_grid();
 void set_color(int status);
 void print_letter_with_color(char *str, int *word_status);
-void print_word(char *main_word, char *str, int n);
+void print_word(char *main_word, char *word, int n);
 
 // word.c
-int check_letter(char word[5], char c, int index);
+int check_letter(char word[5], int *letter_checked, char c, int index);
 int *check_word(char *word, char *word_try);
 
 //dictionary_filter.c
@@ -42,6 +42,8 @@ char *get_main_word();
 
 //checks.c
 int correct_word(char * main_word, char *word);
+int check_length(char *str);
+int clean_stdin(void);
 
 
 #endif

@@ -119,10 +119,12 @@ void print_letter_with_color(char *str, int *word_status)
 }
 
 // Imprime la palabra en la línea indicada
-void print_word(char *main_word, char *str, int n)
+void print_word(char *main_word, char *word, int n)
 {
 	int i, j;
-	int *word_status = check_word(main_word, str);
+	int *word_status = check_word(main_word, word);
+
+
 	printf("\0337"); // Guarda posición del cursor
 	printf("\033[1A");
 	printf("\033[1A");
@@ -134,7 +136,7 @@ void print_word(char *main_word, char *str, int n)
 
 	printf("\033[2A");
 
-	print_letter_with_color(str, word_status);
+	print_letter_with_color(word, word_status);
 
 	printf("\0338"); // Reestablece posición del cursor
 
