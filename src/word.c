@@ -1,17 +1,17 @@
 #include "functions.h"
 
 
-int check_letter(char word[5], int *letter_checked, char c, int index)
+int check_letter(char main_word[5], int *letter_checked, char c, int index)
 {	
 	int i;
 
-	for(i = 0; word[i]; i++)
+	for(i = 0; main_word[i]; i++)
 	{
-		if(word[i] == c)
+		if(main_word[i] == c)
 		{
-			if(!letter_checked[i])
+			if(!letter_checked[index])
 			{
-				letter_checked[i] = 1;
+				letter_checked[index] = 1;
 
 				return (2);		//c está en word pero no en la misma posición
 			}
