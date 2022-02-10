@@ -9,6 +9,7 @@
 #include <unistd.h>
 #include <time.h>
 #include <ctype.h>
+#include <string.h>
 
 #define trc "\U00002513" //┓
 #define tlc "\U0000250F" //┏
