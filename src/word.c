@@ -9,9 +9,9 @@ int check_letter(char main_word[5], int *letter_checked, char c, int index)
 	{
 		if(main_word[i] == c)
 		{
-			if(!letter_checked[index])
+			if(!letter_checked[i])
 			{
-				letter_checked[index] = 1;
+				letter_checked[i] = 1;
 
 				return (2);		//c está en word pero no en la misma posición
 			}
