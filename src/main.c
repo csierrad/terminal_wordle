@@ -22,7 +22,7 @@ int main()
 	filter_5letter_words();
 	main_word = to_upper(get_main_word());
 
-	printf("\e[8;43;68t"); // Resize terminal 42*75 characters (alto x ancho)
+	printf("\e[8;43;69t"); // Resize terminal 43*69 characters (alto x ancho)
 	print_grid();
 	printf("\n");
 
