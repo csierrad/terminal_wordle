@@ -21,7 +21,6 @@ int main()
 
 	filter_5letter_words();
 	main_word = to_upper(get_main_word());
-	//printf("main_word: %s\n", main_word);
 
 	printf("\e[8;43;68t"); // Resize terminal 42*75 characters (alto x ancho)
 	print_grid();

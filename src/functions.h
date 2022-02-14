@@ -33,8 +33,8 @@ void print_letter_with_color(char *str, int *word_status);
 void print_word(char *main_word, char *word, int n);
 
 // word.c
-int check_letter(char word[5], int *letter_checked, char c, int index);
-int *check_word(char *word, char *word_try);
+int check_letter(char c, char *main_word, int *letter_checked);
+int *check_word(char *main_word, char *word);
 
 //dictionary_filter.c
 void filter_5letter_words();
