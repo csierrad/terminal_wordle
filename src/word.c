@@ -12,11 +12,11 @@ int check_letter(char c, char *main_word, int *letter_checked)
 			if (!letter_checked[i])
 			{
 				letter_checked[i] = 1;
-				return (2);		// La letra esta pero no en esa posición
+				return (2);		// Letter at worng position
 			}
 		}
 	}
-	return (0);		// La letra no está
+	return (0);		// Wrong letter
 }
 
 
@@ -35,7 +35,7 @@ int *check_word(char *main_word, char *word)
 	{
 		if (word[i] == main_word[i])
 		{
-			word_status[i] = 1;		//La letra está en esa posición
+			word_status[i] = 1;		//Correct letter
 			letter_checked[i] = 1;
 		}
 	}

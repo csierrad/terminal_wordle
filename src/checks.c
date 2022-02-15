@@ -3,12 +3,12 @@
 
 int clean_stdin(void)
 {
-    int c, i = 0;	// Si i vale 0, la palabra introducida es de 5 letras
+    int c, i = 0;	// i = 0 -> the word introduced has 5 letters
     do {
         c = getchar();
 		if(tolower((char)c) >= 'a' && tolower((char)c) <= 'z')
 		{
-			i = 1;	//Si i vale 1, la palabra introducida es de más de 5 letras
+			i = 1;	//i = 1 -> the word introduced has more than 5 letters
 		}
     } while (c != '\n' && c != EOF);
 
@@ -24,14 +24,14 @@ int check_length(char *str)
 	{
 		if(str[i] == 10)
 		{
-			return (1); 	//return 1 -> palabra más corta de 5 letras
+			return (1); 	//return 1 -> the word has less than 5 letters
 		}
 	}
 	if(clean_stdin())
 	{
-		return (2);		//return 2 -> palabra de más de 5 letras
+		return (2);		//return 2 -> the word has more than 5 letters
 	}
-	return (0);		//return 0 -> palabra de 5 letras
+	return (0);		//return 0 -> word of 5 letters
 }
 
 
