@@ -1,4 +1,4 @@
-#include "functions.h"
+#include "header.h"
 
 
 int clean_stdin(void)

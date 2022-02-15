@@ -1,4 +1,4 @@
-#include "functions.h"
+#include "header.h"
 
 // Print the initial grid
 void print_grid()

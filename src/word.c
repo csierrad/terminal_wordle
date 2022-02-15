@@ -1,4 +1,4 @@
-#include "functions.h"
+#include "header.h"
 
 
 int check_letter(char c, char *main_word, int *letter_checked)

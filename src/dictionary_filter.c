@@ -1,4 +1,4 @@
-#include "functions.h"
+#include "header.h"
 
 //Word list -> https://github.com/bitcoin/bips/blob/master/bip-0039/spanish.txt
 

@@ -1,4 +1,4 @@
-#include "functions.h"
+#include "header.h"
 
 char *to_upper(char *str)
 {
