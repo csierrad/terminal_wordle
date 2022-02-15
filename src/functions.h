@@ -23,6 +23,9 @@
 #define right_mid_line " " vl				  // ┃
 #define bot_line blc hl hl hl hl hl hl hl brc //┗━━━┛
 
+#define wordle_header "\n 888       888   d88888b   8888888b   8888888b   888      8888888888 \n 888   o   888 d88P   Y88b 888   Y88b 888   Y88b 888      888        \n 888  d8b  888 888     888 888    888 888    888 888      888        \n 888 d888b 888 888     888 888   d88P 888    888 888      8888888    \n 888d88888b888 888     888 8888888P   888    888 888      888        \n 88888P Y88888 888     888 888 T88b   888    888 888      888        \n 8888P   Y8888 Y88b   d88P 888  T88b  888   d88P 888      888        \n 888P     Y888   Y88888P   888   T88b 8888888P   88888888 8888888888 \n\n"
+
+
 // main.c
 char *to_upper(char *str);
 
@@ -45,6 +48,7 @@ char *get_main_word();
 int correct_word(char * main_word, char *word);
 int check_length(char *str);
 int clean_stdin(void);
+int check_characters(char *word);
 
 
 #endif

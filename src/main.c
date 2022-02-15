@@ -1,6 +1,5 @@
 #include "functions.h"
 
-
 char *to_upper(char *str)
 {
 	int i = 0;
@@ -12,6 +11,7 @@ char *to_upper(char *str)
 
 	return (str);
 }
+
 
 int main()
 {
@@ -31,7 +31,7 @@ int main()
 		printf("Introduce la %d palabra: ", i + 1);
 		fgets(word, 6, stdin);
 		
-		if (check_length(word))
+		if (check_length(word) || check_characters(to_upper(word)))
 		{
 			i--;
 		}

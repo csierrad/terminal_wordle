@@ -51,3 +51,18 @@ int correct_word(char *main_word, char *word)
 
 	return (1);
 }
+
+
+int check_characters(char *word)
+{
+	int i = 0;
+	while(word[i])
+	{
+		if(word[i] < 'A' || word[i] > 'Z')
+		{
+			return (1);		//The word has non alphabetical characters
+		}
+		i++;
+	}
+	return (0);		//The word has alphabetical characters
+}
