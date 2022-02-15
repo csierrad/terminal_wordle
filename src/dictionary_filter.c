@@ -1,7 +1,7 @@
 #include "header.h"
 
-//Word list -> https://github.com/bitcoin/bips/blob/master/bip-0039/spanish.txt
 
+//Used to save only 5 letter words
 void filter_5letter_words()
 {
 	int eof = 1, i, flag;
@@ -41,6 +41,7 @@ void filter_5letter_words()
 	return;
 }
 
+// Get the rows of filtered_dictionary
 int get_rows()
 {
 	int rows = 0, eof = 1;
@@ -62,6 +63,7 @@ int get_rows()
 	return(rows);
 }
 
+//Choose randomly the word that will be the main_word
 char *get_main_word()
 {
 	int i = 0, nrand, rows;

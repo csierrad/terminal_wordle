@@ -1,6 +1,6 @@
 #include "header.h"
 
-
+// Return the relative position of word in relation to main_word
 int check_letter(char c, char *main_word, int *letter_checked)
 {
 	int i;
@@ -19,7 +19,7 @@ int check_letter(char c, char *main_word, int *letter_checked)
 	return (0);		// Wrong letter
 }
 
-
+//Function to check if the letters from word are or not in main_word and its relative position
 int *check_word(char *main_word, char *word)
 {
 	int i;

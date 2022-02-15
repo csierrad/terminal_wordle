@@ -59,7 +59,7 @@ void print_grid()
 	return;
 }
 
-
+//Set the color depending on the status provided
 void set_color(int status)
 {
 	switch(status)
@@ -80,6 +80,7 @@ void set_color(int status)
 	return;
 }
 
+//Auxiliar function for print_word
 void print_letter_with_color(char *str, int *word_status)
 {
 	int i, j;

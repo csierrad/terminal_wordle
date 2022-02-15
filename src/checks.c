@@ -1,6 +1,6 @@
 #include "header.h"
 
-
+//Used to clean stdin and at the same time to check the word length
 int clean_stdin(void)
 {
     int c, i = 0;	// i = 0 -> the word introduced has 5 letters
@@ -15,7 +15,7 @@ int clean_stdin(void)
 	return (i);
 }
 
-
+//Used to check if the word introduced has exacatly 5 letters
 int check_length(char *str)
 {
 	int i;
@@ -34,7 +34,7 @@ int check_length(char *str)
 	return (0);		//return 0 -> word of 5 letters
 }
 
-
+//Check if word is the same as main_word
 int correct_word(char *main_word, char *word)
 {
 	int i = 0;
@@ -52,7 +52,7 @@ int correct_word(char *main_word, char *word)
 	return (1);
 }
 
-
+//check if characters introduced are alphabetical characters
 int check_characters(char *word)
 {
 	int i = 0;
