@@ -1,10 +1,12 @@
-# terminal_wordle README
+# Terminal Wordle
 
 Terminal adaptation of the popular game Wordle.
 
----
+<p align="center">
+  <img src="https://github.com/csierrad/terminal_wordle/blob/main/images/demo_wordle.gif" alt="Wordle demo"/>
+</p>
 
-![demo_wordle.gif](images/demo_wordle.gif)
+
 
 ## How to play?
 
