@@ -28,7 +28,7 @@ To execute it just type in terminal:
 
 Currently it’s only available the spanish dictionary but in a near future more languages will be included.
 
-The words used are provided by a list of 2000 of the most common words in spanish which are filtered to keep only the ones with 5 letters (about 600).
+The words used are provided by a list of 2000 of the most common words in spanish which are filtered to keep only the ones with 5 letters (around 600).
 
 [Link to the original list](https://github.com/bitcoin/bips/blob/master/bip-0039/spanish.txt)
 
